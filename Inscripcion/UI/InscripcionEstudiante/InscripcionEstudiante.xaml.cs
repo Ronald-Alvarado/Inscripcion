@@ -21,5 +21,10 @@ namespace Inscripcion.UI.InscripcionEstudiante
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
