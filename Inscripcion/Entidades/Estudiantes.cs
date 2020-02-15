@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inscripcion.Entidades
 {
-    public class Estudiante
+    public class Estudiantes
     {
         [Key]
         public int PersonaId { get; set; }
@@ -14,17 +14,20 @@ namespace Inscripcion.Entidades
         public String Telefono { get; set; }
         public String Cedula { get; set; }
         public String Direccion { get; set; }
-        public String FechaNacimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public int Balance { get; set; }
-    }
 
-    public class Inscripcion
-    {
-        public int InscripcionId { get; set; }
-        public DateTime Fecha { get; set; }
-        public int PersonaId { get; set; }
-        public int Monto { get; set; }
-        public int Balence { get; set; }
 
+        public Estudiantes()
+        {
+            PersonaId = 0;
+            Nombre = String.Empty;
+            Apellido = String.Empty;
+            Telefono = String.Empty;
+            Cedula = String.Empty;
+            Direccion = String.Empty;
+            FechaNacimiento = DateTime.Now;
+            Balance = 0;
+        }
     }
 }

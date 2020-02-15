@@ -21,18 +21,18 @@
         <Label Content="Dirección" HorizontalAlignment="Left" Height="27" Margin="40,223,0,0" VerticalAlignment="Top" Width="117" FontWeight="Black"/>
         <Label Content="FechaNacimiento" HorizontalAlignment="Left" Height="27" Margin="40,255,0,0" VerticalAlignment="Top" Width="117" FontWeight="Black"/>
         <Label Content="Balance" HorizontalAlignment="Left" Height="27" Margin="40,287,0,0" VerticalAlignment="Top" Width="117" FontWeight="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,63,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,95,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,127,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,159,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,191,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,223,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,287,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27" TextChanged="TextBox_TextChanged"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="273,63,0,0" VerticalAlignment="Top" Height="27" Width="117" FontStyle="Italic"/>
-        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="40,361,0,0" VerticalAlignment="Top" Height="35" Width="90"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="169,361,0,0" VerticalAlignment="Top" Height="35" Width="90"/>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="300,361,0,0" VerticalAlignment="Top" Height="35" Width="90"/>
+        <TextBox x:Name="EstudianteId_Text" HorizontalAlignment="Left" Margin="200,63,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="27"/>
+        <TextBox x:Name="Nombre_Text" HorizontalAlignment="Left" Margin="200,95,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
+        <TextBox x:Name="Apellido_Text" HorizontalAlignment="Left" Margin="200,127,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
+        <TextBox x:Name="Telefono_Text" HorizontalAlignment="Left" Margin="200,159,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
+        <TextBox x:Name="Cedula_Text" HorizontalAlignment="Left" Margin="200,191,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
+        <TextBox x:Name="Direccion_Text" HorizontalAlignment="Left" Margin="200,223,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27"/>
+        <TextBox x:Name="Balance" HorizontalAlignment="Left" Margin="200,287,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="27" IsReadOnly="True"/>
+        <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="273,63,0,0" VerticalAlignment="Top" Height="27" Width="117" FontStyle="Italic" Click="BuscarButton_Click"/>
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="40,361,0,0" VerticalAlignment="Top" Height="35" Width="90" Click="NuevoButton_Click"/>
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="169,361,0,0" VerticalAlignment="Top" Height="35" Width="90" Click="GuardarButton_Click"/>
+        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="300,361,0,0" VerticalAlignment="Top" Height="35" Width="90" Click="EliminarButton_Click"/>
+        <DatePicker x:Name="FechaBox" HorizontalAlignment="Left" Margin="200,255,0,0" VerticalAlignment="Top" Height="27" Width="190"/>
 
     </Grid>
 </Window>

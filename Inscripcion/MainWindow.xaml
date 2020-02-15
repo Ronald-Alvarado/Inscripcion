@@ -14,8 +14,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Menu Margin="0,0,0,371" Background="#FFECD5D5">
-            <MenuItem x:Name="RegistrarEstudianteButton" Header="Registrar Persona" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="RegistrarEstudianteButton_Click"/>
-            <MenuItem x:Name="InscribirEstudianteButton" Header="Inscribir Estudiante" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="InscribirEstudianteButton_Click"/>
+            <MenuItem x:Name="RegistrarEstudianteButton" Header="Registrar Inscripcion" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="RegistrarEstudianteButton_Click"/>
+            <MenuItem x:Name="InscribirEstudianteButton" Header="Registrar Persona" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="InscribirEstudianteButton_Click"/>
             <MenuItem x:Name="ConsultarEstudianteButton" Header="Consultar Estudiante" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="ConsultarEstudianteButton_Click"/>
             <MenuItem x:Name="ConsultarInscripcionButton" Header="Consultar Inscripcion" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="ConsultarInscripcionButton_Click"/>
             <MenuItem x:Name="ConsultarBalanceButton" Header="Consultar Balance" Height="49" Width="160" FontStyle="Italic" FontSize="14" FontWeight="Black" Click="ConsultarBalanceButton_Click"/>

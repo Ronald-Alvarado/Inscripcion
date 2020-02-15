@@ -8,13 +8,12 @@ namespace Inscripcion.DAL
 {
     public class Contexto : DbContext
     {
-        public DbSet<Estudiante> Estudiantes { get; set; }
+        public DbSet<Estudiantes> Estudiantes { get; set; }
         public DbSet<Inscripciones> Inscripciones { get; set; }
-        public object Estudiante { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = DESKTOP-RLIPRAX\SQLEXPRESS; Database = Inscripcion; trusted_Connection = true");
+            optionsBuilder.UseSqlServer(@"Server = DESKTOP-RLIPRAX\SQLEXPRESS; Database = InscripcionDb; trusted_Connection = true");
             
         }
     }

@@ -11,14 +11,14 @@ namespace Inscripcion.BLL
 {
     public class EstudianteBLL
     {
-        public static bool Guardar(Estudiante Estudiantes)
+        public static bool Guardar(Estudiantes estudiantes)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                if (db.Estudiantes.Add(Estudiantes) != null)
+                if (db.Estudiantes.Add(estudiantes) != null)
                     paso = db.SaveChanges() > 0;
             }
             catch (Exception)
@@ -33,14 +33,14 @@ namespace Inscripcion.BLL
             return paso;
         }
 
-        public static bool Modificar(Estudiante Estudiantes)
+        public static bool Modificar(Estudiantes estudiantes)
         {
             bool paso = false;
             Contexto db = new Contexto();
 
             try
             {
-                db.Entry(Estudiantes).State = EntityState.Modified;
+                db.Entry(estudiantes).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);
             }
             catch (Exception)
@@ -77,14 +77,14 @@ namespace Inscripcion.BLL
             return paso;
         }
 
-        public static Estudiante Buscar(int Id)
+        public static Estudiantes Buscar(int Id)
         {
             Contexto db = new Contexto();
-            Estudiante Estudiantes = new Estudiante();
+            Estudiantes estudiantes = new Estudiantes();
 
             try
             {
-                Estudiantes = db.Estudiantes.Find(Id);
+                estudiantes = db.Estudiantes.Find(Id);
             }
             catch (Exception)
             {
@@ -94,12 +94,12 @@ namespace Inscripcion.BLL
             {
                 db.Dispose();
             }
-            return Estudiantes;
+            return estudiantes;
         }
 
-        public static List<Estudiante> GetList(Expression<Func<Estudiante, bool>> Estudiantes)
+        public static List<Estudiantes> GetList(Expression<Func<Estudiantes, bool>> Estudiantes)
         {
-            List<Estudiante> Lista = new List<Estudiante>();
+            List<Estudiantes> Lista = new List<Estudiantes>();
             Contexto db = new Contexto();
 
             try
