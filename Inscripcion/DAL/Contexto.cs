@@ -13,8 +13,7 @@ namespace Inscripcion.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = DESKTOP-RLIPRAX\SQLEXPRESS; Database = InscripcionDb; trusted_Connection = true");
-            
+            optionsBuilder.UseSqlServer(@"Server = DESKTOP-RLIPRAX\SQLEXPRESS; DataBase = InscripcionDb; Trusted_Connection = true");            
         }
     }
 }

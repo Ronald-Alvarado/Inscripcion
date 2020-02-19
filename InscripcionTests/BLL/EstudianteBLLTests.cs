@@ -3,6 +3,7 @@ using Inscripcion.BLL;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Inscripcion.Entidades;
 
 namespace Inscripcion.BLL.Tests
 {
@@ -12,13 +13,22 @@ namespace Inscripcion.BLL.Tests
         [TestMethod()]
         public void GuardarTest()
         {
-            Assert.Fail();
+            Estudiantes estudiantes = new Estudiantes();
+            Inscripciones inscripciones = new Inscripciones();
+
+            public int Monto = estudiantes.Balance;
+
+            //    EstudianteBLL.Guardar(estudiantes);
+
+            public int MontoNuevo = estudiantes.Balance + Inscripcion.Monto;
+
+            Assert.isnotequal(Monto,MontoNuevo);
         }
 
         [TestMethod()]
         public void ModificarTest()
         {
-            Assert.Fail();
+            Assert.IsNotEquals();
         }
 
         [TestMethod()]

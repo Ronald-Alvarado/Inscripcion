@@ -21,5 +21,10 @@ namespace Inscripcion.UI.ConsultaEstudiante
         {
             InitializeComponent();
         }
+
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
     }
 }
